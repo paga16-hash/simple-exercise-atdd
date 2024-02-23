@@ -11,15 +11,9 @@ This repository contains a simple and basic collection of acceptance tests for a
 
 ## Try it!
 
-1. Clone this repository to your local machine:
+1. Run the acceptance tests using a compatible testing framework such as Cucumber.
 
-    ```bash
-    git clone [<repository_url>](https://github.com/paga16-hash/simple-exercise-atdd.git)
-    ```
-
-2. Run the acceptance tests using a compatible testing framework such as Cucumber.
-
-4. Review the test results to ensure the Calculator functions as expected.
+2. Review the test results to ensure the Calculator functions as expected.
 
 ## License
 
