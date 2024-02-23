@@ -3,7 +3,7 @@ Feature:  Adding numbers with a Calculator
   As someone who is bad at math
   I want to be able to add numbers using a Calculator
 
-  Background:
+  Background: Start with a Calculator
     Given I have a Calculator
 
   Scenario:  Add two positive numbers

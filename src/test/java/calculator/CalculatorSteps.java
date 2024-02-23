@@ -39,4 +39,32 @@ public class CalculatorSteps {
             throw new IllegalStateException();
         }
     }
+
+    @When("I divide {int} by {int}")
+    public void iDivideBy(int arg0, int arg1) {
+        this.calculator.enter(arg0);
+        this.calculator.enter(arg1);
+    }
+
+    @Then("the quotient should be {int}")
+    public void theQuotientShouldBe(int arg0) {
+        this.calculator.divide();
+        if (arg0 != this.calculator.getResult()) {
+            throw new IllegalStateException();
+        }
+    }
+
+    @When("I multiply {int} and {int}")
+    public void iMultiplyAnd(int arg0, int arg1) {
+        this.calculator.enter(arg0);
+        this.calculator.enter(arg1);
+    }
+
+    @Then("the product should be {int}")
+    public void theProductShouldBe(int arg0) {
+        this.calculator.multiply();
+        if (arg0 != this.calculator.getResult()) {
+            throw new IllegalStateException();
+        }
+    }
 }
